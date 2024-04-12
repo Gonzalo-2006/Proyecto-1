@@ -176,3 +176,4 @@ var user4 = new Bosillo()
   user4.montoDeBolsillo  = parseInt(user1.montoTotal += user4.tamañoDeBolsillo)
  
 console.log("Usuario 4: ",user4)
+

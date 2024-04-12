@@ -2,10 +2,11 @@
 
 //Funciones: 
 
-function color (){
-    var texto = document.getElementById('texto')
+function color(){
+    var texto = document.getElementById('nombreUsuario')
     texto.style.color = '#' + Math.floor(Math.random()*16777215).toString(16);
 }
+
 /*
 
 print = descarga de document. 
