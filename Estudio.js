@@ -152,7 +152,7 @@ console.log("Usuario 1: ",user1)
 console.log("Usuario 2: ",user2)
 console.log("Usuario 3: ",user3)
 
-class Bosillo extends Tarjeta{
+class Bolsillo extends Tarjeta{
   constructor(){
     super(Tarjeta)
     this.nombreDelBolsillo = ""
@@ -161,8 +161,8 @@ class Bosillo extends Tarjeta{
   }
 }
 
-var user4 = new Bosillo()
-//Datos del Usuario
+var user4 = new Bolsillo()
+//Datos del Usuario en tarjeta
   user4.proietario = user1.proietario 
   user4.edadDePropietario = user1.edadDePropietario
   user4.montoTotal = user1.montoTotal
@@ -172,8 +172,21 @@ var user4 = new Bosillo()
   user4.tamañoDeBolsillo = 40
   user4.nombreDelBolsillo = "Pedrito"
   user4.ladoDelBolsillo = "Derecho"
-
   user4.montoDeBolsillo  = parseInt(user1.montoTotal += user4.tamañoDeBolsillo)
  
 console.log("Usuario 4: ",user4)
 
+
+var user5 = new Bolsillo()
+// Datos del Ususario en tarjeta
+  user5.proietario = "Chalo Jr"
+  user5.edadDePropietario = 18
+  user5.montoTotal = user1.montoTotal += user4.montoTotal
+
+// Datos del Bolsillo
+  user5.tamañoDeBolsillo = 80
+  user5.nombreDelBolsillo = user4.nombreDelBolsillo + 2
+  user5.ladoDelBolsillo = "Izquierdo"
+  user5.montoDeBolsillo = parseInt(user4.montoDeBolsillo += user5.tamañoDeBolsillo)
+
+console.log("Usuario 5: ",user5)
